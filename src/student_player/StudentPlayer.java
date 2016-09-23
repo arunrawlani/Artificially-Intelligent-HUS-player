@@ -31,12 +31,7 @@ public class StudentPlayer extends HusPlayer {
 
         // Use ``player_id`` and ``opponent_id`` to get my pits and opponent pits.
         int[] my_pits = pits[player_id];
-        //int my_seeds = 0;
-//        for (int i = 0; i < 32; i++){
-//    		System.out.println("my_pits seeds: "+my_pits[i]+" seed on pit "+i);
-//    		my_seeds = my_seeds + my_pits[i];
-//    	}
-        //System.out.println("Total number of my seeds:"+my_seeds);
+
         int[] op_pits = pits[opponent_id];
 
         // Use code stored in ``mytools`` package.
@@ -74,8 +69,6 @@ public class StudentPlayer extends HusPlayer {
        
        
        
-       //ERROR CASE FOUND: When all returned values are less than 0, what do we do in that case? ASK ANDI. Initialized max value to -100
-       //System.out.println(player_id);
        System.out.println("Maxvalue is: "+maxValue);
        return bestMove;
 
